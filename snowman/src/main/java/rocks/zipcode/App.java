@@ -4,7 +4,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        String input = "(print (add 2 (subtract 4 2)))";
+        String input = "(print (multiply 8 (divide 4 (mod 3 2))))";
         
         Compiler compiler = new Compiler();
 
@@ -13,5 +13,6 @@ public class App
         String output = compiler.compile(input);
 
         System.out.println(output);
+        
     }
 }
